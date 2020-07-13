@@ -4,15 +4,15 @@ namespace Dealership.Models
 {
   public class Car
   {
-    private string _makeModel;
-    private int _price;
-    private int _miles;
+    public string MakeModel { get; set; }
+    public int Price { get; set; }
+    public int Miles { get; set; }
 
     public Car(string makeModel, int price, int miles)
     {
-      _makeModel = makeModel;
-      _price = price;
-      _miles = miles;
+        MakeModel = makeModel;
+        Price = price;
+        Miles = miles;
     }
 
     public string GetMakeModel()
@@ -48,7 +48,7 @@ namespace Dealership.Models
     }
     public static string MakeSound(string sound)
     {
-        return "Our cars sound like " + sound;
+      return "Our cars sound like " + sound;
     }
   }
 }
